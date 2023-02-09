@@ -79,7 +79,7 @@ const filterAge = async (req, res) => {
   const { max, min } = req.query;
   try {
     const persons = await Person.find();
-    const searchedPersons = persons.filter(
+    const searchedPersons = await persons.filter(
       (elt) => elt.age >= Number(min) && elt.age <= Number(max)
     );
     if (searchedPersons.length === 0) {
