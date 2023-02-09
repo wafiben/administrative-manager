@@ -9,7 +9,6 @@ const {
   filterAge,
 } = require("../controllers/personController");
 const router = express.Router();
-
 router.get("/person", getAllPersons);
 router.get("/person/:id", getOnePerson);
 router.post("/person", createPerson);
