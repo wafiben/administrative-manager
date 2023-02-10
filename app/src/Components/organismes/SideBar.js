@@ -1,9 +1,9 @@
 import React from "react";
 import Radio from "../../atoms/radio";
 import Form from "react-bootstrap/Form";
-import { SideBarStyle } from "../../styles/styles";
+import { SideBarStyle } from "../../styles/global";
 import CustomButton from "../../atoms/Button";
-import SearchBloc from "./searchBloc";
+import SearchBloc from "../molecules/SearchBloc";
 
 function SideBar() {
   return (

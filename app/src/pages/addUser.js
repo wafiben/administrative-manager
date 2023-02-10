@@ -1,18 +1,18 @@
 import React from "react";
-import InputFieald from "../../atoms/Input";
+import InputField from "../../atoms/Input";
 import Form from "react-bootstrap/Form";
 import CustomButton from "../../atoms/Button";
-import { formStyle } from "../../styles/styles";
+import { formStyle } from "../styles/global";
 
 function AddUser() {
   return (
     <Form style={formStyle}>
-      <InputFieald
+      <InputField
         type={"text"}
         placeholder="type your name"
         titelFieald="username"
       />
-      <InputFieald
+      <InputField
         type={"number"}
         placeholder="type your age"
         titelFieald="age"

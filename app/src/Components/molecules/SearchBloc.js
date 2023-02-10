@@ -2,7 +2,7 @@ import React from "react";
 import InputFieald from "../../atoms/Input";
 import CustomButton from "../../atoms/Button";
 import { useUser } from "../../hooks/useUser";
-import { styleInput, seatrchBlocStyle, btn } from "../.././styles/styles";
+import { styleInput, seatrchBlocStyle, btn } from "../../styles/global";
 
 function SearchBloc() {
   const { setSearchName, handleSubmit } = useUser();
