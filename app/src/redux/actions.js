@@ -1,15 +1,11 @@
 import { actionType } from "./types";
-import { api } from "../api";
+import { api } from "../../config";
 import { getAllUsersFromApi } from "./../services/userService";
+import { getAllUsers } from "../api/users";
 const { getALLUsersApi } = api;
 const { GET_ALLL_USERS } = actionType;
-export const getAllUsersAction = () => async (dispatch) => {
-  try {
-    const {
-      data: { persons },
-    } = await getAllUsersFromApi(getALLUsersApi);
-    dispatch({ type: GET_ALLL_USERS, payload: persons });
-  } catch (error) {
-    console.log(error);
-  }
+
+export const getAllUsersAction = async () => {
+  const { persons } = await getAllUsers();
+  return { type: GET_ALLL_USERS, payload: persons };
 };

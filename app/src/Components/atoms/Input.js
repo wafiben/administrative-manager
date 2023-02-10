@@ -2,10 +2,10 @@ import React from "react";
 
 import Form from "react-bootstrap/Form";
 
-function InputFieald({ titelFieald, type, placeholder, handleChange, style }) {
+function InputField({ titelField, type, placeholder, handleChange, style }) {
   return (
     <Form.Group className="mb-3" controlId="formBasicEmail" style={style}>
-      <Form.Label>{titelFieald}</Form.Label>
+      <Form.Label>{titelField}</Form.Label>
       <Form.Control
         type={type}
         placeholder={placeholder}
@@ -15,4 +15,4 @@ function InputFieald({ titelFieald, type, placeholder, handleChange, style }) {
   );
 }
 
-export default InputFieald;
+export default InputField;

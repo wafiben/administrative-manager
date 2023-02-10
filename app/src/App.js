@@ -1,10 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
-import AddUser from "./Components/AddUser/addUser";
-import CardCustom from "./Components/list/card";
+import AddUser from "./pages/addUser";
+import CardCustom from "./pages/List/card";
 import Form from "react-bootstrap/Form";
-import SideBar from "./Components/SideNavbar";
-import List from "./Components/list";
+import SideBar from "./Components/organismes/SideBar";
+import List from "./pages/List";
 import {
   createBrowserRouter,
   RouterProvider,
