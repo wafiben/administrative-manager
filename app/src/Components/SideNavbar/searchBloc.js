@@ -3,24 +3,25 @@ import InputFieald from "../../atoms/Input";
 import CustomButton from "../../atoms/Button";
 import { useUser } from "../../hooks/useUser";
 import { styleInput, seatrchBlocStyle, btn } from "../.././styles/styles";
-
 function SearchBloc() {
-  const { setSearchName, handleSubmit } = useUser();
+  const { setSearchName } = useUser();
   return (
     <div style={seatrchBlocStyle}>
       <InputFieald
         titelFieald={null}
         placeholder="name"
         type="search"
-        handleChange={(e) => setSearchName(e.target.value)}
+        handleChange={(e) => {
+          setSearchName(e.target.value);
+        }}
         style={styleInput}
       />
-      <CustomButton
+      {/*  <CustomButton
         title="search user"
         variant="secondary"
         style={btn}
         handleClick={handleSubmit}
-      />
+      /> */}
     </div>
   );
 }

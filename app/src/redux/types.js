@@ -1,1 +1,4 @@
-export const actionType = { GET_ALLL_USERS: "GET_ALLL_USERS" };
+export const actionType = {
+  GET_ALLL_USERS: "GET_ALLL_USERS",
+  SEARCHE_USER_BY_NAME: "SEARCHE_USER_BY_NAME",
+};
